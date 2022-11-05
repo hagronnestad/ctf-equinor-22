@@ -1,8 +1,16 @@
 
+# Usage:
+#   python3 xored-mkpayload.py > payload
+#   gdb xored
+#     br *0x401499
+#     run < payload
+#     next
+#     -BLÆ-
 
-# xored with @@@@@@@@@@@@@@@@
+
+# XOR-ed with @@@@@@@@@@@@@@@@
+
 key = bytearray.fromhex("0b35030f0c2375100908732d2710762e0a3806730402081822040813310d7019")
-
 
 buf = [
     #i
